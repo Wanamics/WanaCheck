@@ -4,7 +4,7 @@ Il est souvent utile de s'assurer que les champs nécessaires ont bien été com
 
 Cette extension vous permettra d'être automome pour des contrôles simples.
 
-![Panneau Attention](images/attention.png)
+![Panneau Douane](images/douane.png)
 
 **Sommaire**
 

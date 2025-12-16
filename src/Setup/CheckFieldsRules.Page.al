@@ -17,38 +17,19 @@ page 87160 "Check Fields Rules"
         {
             repeater(General)
             {
-                field("Table No."; Rec."Table No.")
-                {
-                    // trigger OnValidate()
-                    // begin
-                    //     Rec.CalcFields("Table Caption");
-                    // end;
-                }
+                field("Table No."; Rec."Table No.") { }
                 field("Table Name"; Rec."Table Name") { }
                 field("Table Caption"; Rec."Table Caption") { }
-                field("Rule No."; Rec."Rule No.")
-                {
-                    Width = 4;
-                }
+                field("Rule No."; Rec."Rule No.") { }
                 field(Conditions; Rec.Filters(false))
                 {
                     Caption = 'Conditions';
                     ToolTip = 'List of fields filters';
-                    // trigger OnDrillDown()
-                    // begin
-                    //     Rec.DrillDown(false);
-                    //     CurrPage.Update(false);
-                    // end;
                 }
                 field(Checks; Rec.Filters(true))
                 {
                     Caption = 'Checks';
                     ToolTip = 'List of fields check';
-                    // trigger OnDrillDown()
-                    // begin
-                    //     Rec.DrillDown(true);
-                    //     CurrPage.Update(false);
-                    // end;
                 }
                 field("Confirm Bypass"; Rec."Confirm Bypass") { }
             }

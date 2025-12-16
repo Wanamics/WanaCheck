@@ -5,7 +5,6 @@ table 87161 "Check Fields Rule Field"
 {
     Caption = 'Check Fields Rule Field';
     DataClassification = SystemMetadata;
-    // DrillDownPageId = "Check Fields Rule Fields";
 
     fields
     {
@@ -43,17 +42,6 @@ table 87161 "Check Fields Rule Field"
                     if Field.Get("Table No.", "Field No.") then;
                 if FieldSelection.Open(Field) then
                     "Field No." := Field."No.";
-                // if not FieldSelection.Open(Field) then
-                //     exit;
-                // "Field No." := Field."No.";
-                // // Modify(true);
-                // if Field.Count > 1 then
-                //     if Field.FindSet() then
-                //         repeat
-                //             Init();
-                //             "Field No." := Field."No.";
-                //             if Insert(true) then;
-                //         until Field.Next() = 0;
             end;
 
             trigger OnValidate()
@@ -68,15 +56,11 @@ table 87161 "Check Fields Rule Field"
 
             trigger OnLookup()
             var
-                // TypeHelper: Codeunit "Type Helper";
                 Field: Record Field;
             begin
                 Field.Get("Table No.", "Field No.");
                 if Field.RelationTableNo <> 0 then
-
-                    // text := Format(IntegerValue);
                     LookupTableRelation(Field, Filter);
-                // if Evaluate(IntegerValue, text) then;
             end;
 
             trigger OnValidate()

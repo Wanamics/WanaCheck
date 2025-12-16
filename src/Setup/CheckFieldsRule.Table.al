@@ -15,12 +15,14 @@ table 87160 "Check Fields Rule"
             TableRelation = AllObjWithCaption."Object ID" where("Object Type" = const(Table), "Object ID" = filter('<2000000000'));
             NotBlank = true;
             BlankZero = true;
+            Width = 8;
         }
         field(2; "Rule No."; Integer)
         {
             Caption = 'Rule No.';
             ToolTip = 'Specifies the rule No.';
             BlankZero = true;
+            Width = 4;
         }
         field(4; "Confirm Bypass"; Boolean)
         {
@@ -71,16 +73,6 @@ table 87160 "Check Fields Rule"
         CheckFieldsRuleField.SetRange("Rule No.", "Rule No.");
         CheckFieldsRuleField.DeleteAll(true);
     end;
-
-    // procedure DrillDown(pCheck: Boolean): Boolean
-    // var
-    //     CheckFieldRuleField: Record "Check Fields Rule Field";
-    // begin
-    //     CheckFieldRuleField.SetRange("Table No.", Rec."Table No.");
-    //     CheckFieldRuleField.SetRange("Rule No.", Rec."Rule No.");
-    //     CheckFieldRuleField.SetRange(Check, pCheck);
-    //     Page.RunModal(Page::"Check Fields Rule Fields", CheckFieldRuleField);
-    // end;
 
     procedure Filters(pCheck: Boolean): Text
     var

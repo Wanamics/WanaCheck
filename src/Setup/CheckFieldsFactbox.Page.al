@@ -12,16 +12,9 @@ page 87162 "Check Fields Factbox"
         {
             repeater(General)
             {
-                field("Field No."; Rec."Field No.")
-                {
-                    Visible = false;
-                }
-                field("Field Name"; Rec."Field Name")
-                {
-                }
-                field("Filter"; Rec."Filter")
-                {
-                }
+                field("Field No."; Rec."Field No.") { Visible = false; }
+                field("Field Name"; Rec."Field Name") { }
+                field("Filter"; Rec."Filter") { }
             }
         }
     }
