@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="fr-FR" original="WanaCheck.g.xlf">
+    <body>
+      <group id="body">
+        <trans-unit id="Page 2414623399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check Fields Rule Card</source>
+          <target>Règle de contrôle de champs</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2414623399 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target>Général</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Card - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2414623399 - Control 3289630945 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Checks</source>
+          <target>Contrôles</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Card - Control Then - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2414623399 - Control 4065721888 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Conditions</source>
+          <target>Conditions</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Card - Control When - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4066219315 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check Fields Rule</source>
+          <target>Règle de contrôle des champs</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4066219315 - Field 2145639788 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the rule can be by passed after confirmation.</source>
+          <target>Détermine si la règle peut être outrepassée après confirmation.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Field Confirm Bypass - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4066219315 - Field 2145639788 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Confirm Bypass</source>
+          <target>Confirmer pour outrepasser</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Field Confirm Bypass - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4066219315 - Field 1551028707 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the rule No.</source>
+          <target>Spéficie le N° de la règle.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Field Rule No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4066219315 - Field 1551028707 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rule No.</source>
+          <target>N° règle</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Field Rule No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4066219315 - Field 1393533604 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Caption</source>
+          <target>Désignation table</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Field Table Caption - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4066219315 - Field 3808951907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Name</source>
+          <target>Nom table</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Field Table Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4066219315 - Field 3017471043 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Spécified the Table No.</source>
+          <target>Spécifie le N° de la table.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Field Table No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4066219315 - Field 3017471043 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No.</source>
+          <target>N° table</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Field Table No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check Fields Rule Field</source>
+          <target>Règle de contrôle - Champ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 1417232546 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a where field (default) or a check field.</source>
+          <target>Spécifie s'il s'agit d'un champ de filtre (défaut) ou de contrôle.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Check - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 1417232546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check</source>
+          <target>Contrôler</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Check - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 823559016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the field caption of the field.</source>
+          <target>Spécifie la désignation du champ.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Field Caption - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 823559016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Caption</source>
+          <target>Nom champ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Field Caption - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 3070320983 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the field.</source>
+          <target>Spécifie le nom du champ.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Field Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 3070320983 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source>
+          <target>Nom de champ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 3531868071 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the field No. (lookup to select one or more).</source>
+          <target>Spécifie le N° du champ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Field No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 3531868071 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field No.</source>
+          <target>N° champ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 3090661100 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the field filter value. By setting a value, you specify that only records with that value are included.</source>
+          <target>Spécifie le filtre à appliquer.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Filter - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 3090661100 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Filter</source>
+          <target>Filtre champ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 1551028707 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Rule No.</source>
+          <target>Spécifie le N° de règle</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Rule No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 1551028707 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rule No.</source>
+          <target>N° règle</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Rule No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 3017471043 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specified the Table No.</source>
+          <target>Spécifie le N° de table.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Table No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2185800125 - Field 3017471043 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No.</source>
+          <target>N° table</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Table No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 248974857 - Method 2154691273 - NamedType 3498070739" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 %2 doesn't comply with "%3" %4:\Conditions:%5\Checks:%6</source>
+          <target>%1 %2 n'est pas conforme à "%3" %4 :\Conditions : %5\Contrôles : %6
+</target>
+          <note from="Developer" annotates="general" priority="2">%1:TableCaption, %2:Record Primary Key, %3:Rule TableCaption, %4:"Rule No.", %5:When, %6:Check Fields</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Check Fields - Method ApplyTo - NamedType DoesntComplyLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 248974857 - Method 2154691273 - NamedType 3764383116" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to continue?</source>
+          <target>Voulez-vous continuer ?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Check Fields - Method ApplyTo - NamedType ConfirmLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 36361850 - Action 1976324548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Add Fields</source>
+          <target>Ajouter champs</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Subpage - Action AddFields - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3054768158 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check Fields Rules</source>
+          <target>Règles de contrôles de champs</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3054768158 - Control 3493770575 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>List of fields check</source>
+          <target>Liste des champs contrôlés</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Control Checks - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3054768158 - Control 3493770575 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Checks</source>
+          <target>Contrôles</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Control Checks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3054768158 - Control 2689876268 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>List of fields filters</source>
+          <target>Champs de la condition</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Control Conditions - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3054768158 - Control 2689876268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Conditions</source>
+          <target>Conditions</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Control Conditions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3054768158 - Control 2110638572 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Checks</source>
+          <target>Contrôles</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Control ChecksFactbox - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3054768158 - Control 4225048055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Conditions</source>
+          <target>Conditions</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Control ConditionsFactbox - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,37 @@
+{
+  "id": "aff731b5-22c5-46a3-b5d1-d113724bbffa",
+  "name": "WanaCheck",
+  "publisher": "Wanamics",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "Wanamics90x90.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "27.0.0.0",
+  "idRanges": [
+    {
+      "from": 87160,
+      "to": 87169
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "16.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile", 
+    "GenerateCaptions"
+  ]
+  ,
+  "target" : "Cloud",
+  "contextSensitiveHelpUrl": "https://github.com/Wanamics/WanaCheck?tab=readme-ov-file#extension-wanacheck"
+}
