@@ -24,6 +24,12 @@ table 87160 "Check Fields Rule"
             BlankZero = true;
             Width = 4;
         }
+        field(3; Enabled; Boolean)
+        {
+            Caption = 'Enabled';
+            ToolTip = 'Specifies if the rule is active';
+            Width = 4;
+        }
         field(4; "Confirm Bypass"; Boolean)
         {
             Caption = 'Confirm Bypass';
@@ -61,7 +67,7 @@ table 87160 "Check Fields Rule"
         if "Rule No." <> 0 then
             exit;
         Rec2.SetRange("Table No.", "Table No.");
-        if FindLast() then;
+        if Rec2.FindLast() then;
         "Rule No." := Rec2."Rule No." + 1;
     end;
 
@@ -74,16 +80,16 @@ table 87160 "Check Fields Rule"
         CheckFieldsRuleField.DeleteAll(true);
     end;
 
-    procedure Filters(pCheck: Boolean): Text
-    var
-        RecRef: RecordRef;
-    begin
-        if "Table No." = 0 then
-            exit;
-        RecRef.Open("Table No.");
-        ApplyTo(RecRef, pCheck);
-        exit(RecRef.GetFilters())
-    end;
+    // procedure Filters(pCheck: Boolean): Text
+    // var
+    //     RecRef: RecordRef;
+    // begin
+    //     if "Table No." = 0 then
+    //         exit;
+    //     RecRef.Open("Table No.");
+    //     ApplyTo(RecRef, pCheck);
+    //     exit(RecRef.GetFilters());
+    // end;
 
     procedure IsWithinFilter(pRecordRef: RecordRef; pCheck: Boolean): Boolean
     begin
@@ -92,7 +98,35 @@ table 87160 "Check Fields Rule"
         exit(not pRecordRef.IsEmpty())
     end;
 
-    local procedure ApplyTo(var pRecordRef: RecordRef; pCheck: boolean)
+    procedure Filters(pCheck: Boolean): Text
+    var
+        Dummy: Text;
+    begin
+        exit(Filters(pCheck, Dummy));
+    end;
+
+    procedure Filters(pCheck: Boolean; var pStyleExpr: Text): Text
+    var
+        RecRef: RecordRef;
+    begin
+        if "Table No." = 0 then
+            exit;
+        RecRef.Open("Table No.");
+        if not TryApplyTo(RecRef, pCheck) then begin
+            pStyleExpr := format(PageStyle::Attention);
+            exit(GetLastErrorText());
+        end;
+        pStyleExpr := '';
+        exit(RecRef.GetFilters());
+    end;
+
+    [TryFunction]
+    local procedure TryApplyTo(pRecordRef: RecordRef; pCheck: Boolean)
+    begin
+        ApplyTo(pRecordRef, pCheck);
+    end;
+
+    procedure ApplyTo(var pRecordRef: RecordRef; pCheck: boolean)
     var
         CheckFieldsRuleFilter: Record "Check Fields Rule Field";
     begin
@@ -102,6 +136,19 @@ table 87160 "Check Fields Rule"
         if CheckFieldsRuleFilter.FindSet() then
             repeat
                 pRecordRef.Field(CheckFieldsRuleFilter."Field No.").SetFilter(CheckFieldsRuleFilter.Filter);
+            until CheckFieldsRuleFilter.Next() = 0;
+    end;
+
+    procedure UnapplyTo(var pRecordRef: RecordRef; pCheck: boolean)
+    var
+        CheckFieldsRuleFilter: Record "Check Fields Rule Field";
+    begin
+        CheckFieldsRuleFilter.SetRange("Table No.", "Table No.");
+        CheckFieldsRuleFilter.SetRange("Rule No.", "Rule No.");
+        CheckFieldsRuleFilter.SetRange(Check, pCheck);
+        if CheckFieldsRuleFilter.FindSet() then
+            repeat
+                pRecordRef.Field(CheckFieldsRuleFilter."Field No.").SetRange();
             until CheckFieldsRuleFilter.Next() = 0;
     end;
 }

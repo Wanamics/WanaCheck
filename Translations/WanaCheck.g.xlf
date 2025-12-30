@@ -8,20 +8,25 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Card - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2414623399 - Method 4128543304 - NamedType 3764383116" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to enable this rule now?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Card - Method OnClosePage - NamedType ConfirmLbl</note>
+        </trans-unit>
+        <trans-unit id="Page 2414623399 - Control 3493770575 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Checks</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Card - Control Checks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2414623399 - Control 2689876268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Conditions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Card - Control Conditions - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2414623399 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>General</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Card - Control General - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2414623399 - Control 3289630945 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Checks</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Card - Control Then - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2414623399 - Control 4065721888 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Conditions</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rule Card - Control When - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4066219315 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Check Fields Rule</source>
@@ -37,6 +42,16 @@
           <source>Confirm Bypass</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Field Confirm Bypass - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4066219315 - Field 2891538263 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the rule is active</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Field Enabled - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 4066219315 - Field 2891538263 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enabled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule - Field Enabled - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4066219315 - Field 1551028707 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the rule No.</source>
@@ -119,7 +134,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Filter - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Table 2185800125 - Field 3090661100 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Field Filter</source>
+          <source>Filter</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Check Fields Rule Field - Field Filter - Property Caption</note>
         </trans-unit>
@@ -145,13 +160,23 @@
         </trans-unit>
         <trans-unit id="Codeunit 248974857 - Method 2154691273 - NamedType 3498070739" size-unit="char" translate="yes" xml:space="preserve">
           <source>%1 %2 doesn't comply with "%3" %4:\Conditions:%5\Checks:%6</source>
-          <note from="Developer" annotates="general" priority="2">%1:TableCaption, %2:Record Primary Key, %3:Rule TableCaption, %4:"Rule No.", %5:When, %6:Check Fields</note>
+          <note from="Developer" annotates="general" priority="2">%1:TableCaption, %2:Record Primary Key, %3:Rule TableCaption, %4:"Rule No.", %5:Conditions, %6:Checks</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Check Fields - Method ApplyTo - NamedType DoesntComplyLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 248974857 - Method 2154691273 - NamedType 3764383116" size-unit="char" translate="yes" xml:space="preserve">
           <source>Do you want to continue?</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Check Fields - Method ApplyTo - NamedType ConfirmLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 248974857 - Method 1053616689 - NamedType 3498070739" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 "%2" of %3 doesn't comply with "%4" %5:\Conditions:%6\Checks:%7</source>
+          <note from="Developer" annotates="general" priority="2">%1:Count, %2:TableCaption, %3:HeaderPrimaryKey, %4:RuleTableCaption, %5:"Rule No.", %6:Conditions, %7:Checks</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Check Fields - Method ApplyToSelection - NamedType DoesntComplyLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 248974857 - Method 1053616689 - NamedType 3764383116" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Check Fields - Method ApplyToSelection - NamedType ConfirmLbl</note>
         </trans-unit>
         <trans-unit id="Page 36361850 - Action 1976324548 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Add Fields</source>
@@ -192,6 +217,26 @@
           <source>Conditions</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Control ConditionsFactbox - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3054768158 - Action 4283638840 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Disable selection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Action Disable - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3054768158 - Action 4283638840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Disable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Action Disable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3054768158 - Action 3483044347 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enable selection</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Action Enable - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3054768158 - Action 3483044347 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enable</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Check Fields Rules - Action Enable - Property Caption</note>
         </trans-unit>
       </group>
     </body>

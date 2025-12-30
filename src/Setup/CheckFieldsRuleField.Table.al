@@ -1,6 +1,7 @@
 namespace Wanamics.WanaCheck;
 
 using System.Reflection;
+using Microsoft.Utilities;
 table 87161 "Check Fields Rule Field"
 {
     Caption = 'Check Fields Rule Field';
@@ -38,8 +39,8 @@ table 87161 "Check Fields Rule Field"
                 Field.SetRange(TableNo, "Table No.");
                 Field.SetRange(Class, Field.Class::Normal);
                 Field.SetFilter("No.", '<%1', 2000000000); // avoid system fields
-                if "Field No." <> 0 then
-                    if Field.Get("Table No.", "Field No.") then;
+                // if "Field No." <> 0 then
+                //     if Field.Get("Table No.", "Field No.") then;
                 if FieldSelection.Open(Field) then
                     "Field No." := Field."No.";
             end;
@@ -51,7 +52,7 @@ table 87161 "Check Fields Rule Field"
         }
         field(8; "Filter"; Text[250])
         {
-            Caption = 'Field Filter';
+            Caption = 'Filter';
             ToolTip = 'Specifies the field filter value. By setting a value, you specify that only records with that value are included.';
 
             trigger OnLookup()
@@ -61,6 +62,8 @@ table 87161 "Check Fields Rule Field"
                 Field.Get("Table No.", "Field No.");
                 if Field.RelationTableNo <> 0 then
                     LookupTableRelation(Field, Filter);
+                if Field.Type = Field.Type::Option then
+                    LookupOptionValue(Field, Filter);
             end;
 
             trigger OnValidate()
@@ -100,36 +103,6 @@ table 87161 "Check Fields Rule Field"
             Clustered = true;
         }
     }
-    local procedure LookupTableRelation(pField: Record Field; var pValue: Text)
-    // Subset from Data Editor page 81002 "DET Edit Value" (credit to Drakonian)
-    var
-        SourceFieldInfo: Record Field;
-        RecRef: RecordRef;
-        FieldRefVar: FieldRef;
-        VariantRecord: Variant;
-        RelationFieldId: Integer;
-    begin
-        if pField.RelationTableNo = 0 then
-            exit;
-        RecRef.Open(pField.RelationTableNo);
-        VariantRecord := RecRef;
-        if not (Page.RunModal(0, VariantRecord) in [Action::LookupOK, Action::OK]) then
-            exit;
-        RecRef.GetTable(VariantRecord);
-        if pField.RelationFieldNo = 0 then begin
-            SourceFieldInfo.SetRange(TableNo, pField.RelationTableNo);
-            SourceFieldInfo.SetRange(IsPartOfPrimaryKey, true);
-            SourceFieldInfo.FindFirst();
-            RelationFieldId := SourceFieldInfo."No.";
-        end else
-            RelationFieldId := pField.RelationFieldNo;
-
-        FieldRefVar := RecRef.Field(RelationFieldId);
-        if FieldRefVar.Class() = FieldClass::FlowField then
-            FieldRefVar.CalcField();
-        pValue := Format(FieldRefVar.Value);
-    end;
-
     procedure AddFields()
     var
         Field: Record Field;
@@ -145,5 +118,59 @@ table 87161 "Check Fields Rule Field"
                     "Field No." := Field."No.";
                     if Insert(true) then;
                 until Field.Next() = 0;
+    end;
+
+    local procedure LookupOptionValue(pField: Record Field; var pValue: Text)
+    var
+        Select: Integer;
+        RecRef: RecordRef;
+    begin
+        RecRef.Open(pField.TableNo);
+        if Evaluate(Select, pValue) then
+            Select := Select + 1;
+        Select := StrMenu(RecRef.Field(pField."No.").OptionCaption, Select);
+        if Select <> 0 then
+            pValue := Format(Select - 1);
+    end;
+
+    local procedure LookupTableRelation(pField: Record Field; var pValue: Text)
+    var
+        KeyField: Record Field;
+        RecordRef: RecordRef;
+        // FieldRef: FieldRef;
+        Rec: Variant;
+    // RelationFieldId: Integer;
+    begin
+        if pField.RelationTableNo = 0 then
+            exit;
+        RecordRef.Open(pField.RelationTableNo);
+        FetchPrimaryKey(RecordRef, pValue);
+        Rec := RecordRef;
+        if not (Page.RunModal(0, Rec) in [Action::LookupOK, Action::OK]) then
+            exit;
+        RecordRef.GetTable(Rec);
+        if pField.RelationFieldNo = 0 then begin
+            KeyField.SetRange(TableNo, pField.RelationTableNo);
+            KeyField.SetRange(IsPartOfPrimaryKey, true);
+            KeyField.FindFirst();
+            pField.RelationFieldNo := KeyField."No.";
+        end;
+
+        // FieldRef := RecordRef.Field(pField.RelationFieldNo);
+        // if FieldRef.Class() = FieldClass::FlowField then
+        //     FieldRef.CalcField();
+        pValue := Format(RecordRef.Field(pField.RelationFieldNo).Value);
+    end;
+
+    local procedure FetchPrimaryKey(var pRecordRef: RecordRef; pValue: Code[20])
+    var
+        KeyRef: KeyRef;
+        FieldRef: FieldRef;
+    begin
+        KeyRef := pRecordRef.KeyIndex(1);
+        FieldRef := KeyRef.FieldIndex(1);
+        FieldRef.SetRange(pValue);
+        if pRecordRef.FindFirst() then;
+        FieldRef.SetRange();
     end;
 }

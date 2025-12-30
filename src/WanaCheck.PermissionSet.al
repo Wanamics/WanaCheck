@@ -15,7 +15,7 @@ permissionset 87161 "WanaCheck"
         codeunit "Check Fields" = X,
         codeunit "Check Fields Sales" = X,
         codeunit "Check Fields Jobs" = X,
-        codeunit "Check Fields Master" = X,
+        codeunit "Check Fields Inventory" = X,
         codeunit "Check Fields Purchase" = X,
         page "Check Fields Factbox" = X,
         page "Check Fields Rule Card" = X,

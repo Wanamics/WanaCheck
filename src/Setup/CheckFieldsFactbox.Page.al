@@ -5,7 +5,6 @@ page 87162 "Check Fields Factbox"
     Caption = 'Check Fields Factbox', Locked = true;
     PageType = ListPart;
     SourceTable = "Check Fields Rule Field";
-
     layout
     {
         area(Content)
@@ -13,7 +12,8 @@ page 87162 "Check Fields Factbox"
             repeater(General)
             {
                 field("Field No."; Rec."Field No.") { Visible = false; }
-                field("Field Name"; Rec."Field Name") { }
+                field("Field Name"; Rec."Field Name") { Visible = false; }
+                field("Field Caption"; Rec."Field Caption") { }
                 field("Filter"; Rec."Filter") { }
             }
         }
